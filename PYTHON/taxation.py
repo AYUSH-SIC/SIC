@@ -5,12 +5,16 @@ emp_allowance        = float(input("Monthly Special Allowances : "))
 emp_bonus_percentage = float(input("Bonus Percentage : "))
 emp_gross_salary     = emp_monthly_salary + emp_allowance
 emp_annual_salary    = (emp_gross_salary * 12) + (emp_gross_salary * 12 * emp_bonus_percentage/100)
+emp_std_deduction    = 50000
+emp_taxable_income   = emp_gross_salary - emp_std_deduction
 print("-"*50)
 print("EMPLOYEE DETAILS ARE :- \n" + "-"*50)
-print(f"%-35s = {emp_name}"%('EMPLOYEE NAME'))
-print(f"%-35s = {emp_id}"%('EMPLOYEE ID'))
-print(f"%-35s = {emp_gross_salary:0.2f}"%('EMPLOYEE GROSS MONTHLY SALARY'))
-print(f"%-35s = {emp_annual_salary:0.2f}"%( 'EMPLOYEE GROSS ANNUAL SALARY'))
+print(f"%-15s = {emp_name}"%('EMPLOYEE NAME'))
+print(f"%-15s = {emp_id}"%('EMPLOYEE ID'))
+print(f"%-15s = {emp_gross_salary:0.2f}"%('MONTHLY SALARY'))
+print(f"%-15s = {emp_annual_salary:0.2f}"%( 'ANNUAL SALARY'))
+print(f"%-15s = ANNUAL SALARY - STANDARD DEDUCTION"%( 'TAXABLE INCOME'))
+print(f"%-15s = {emp_taxable_income:0.2f}"%( 'TAXABLE INCOME '))
 
 '''QUESTION STATEMENT 
 Tax Calculator Problem
