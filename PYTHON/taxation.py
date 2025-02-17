@@ -4,11 +4,13 @@ emp_monthly_salary   = float(input("Monthly Salary : "))
 emp_allowance        = float(input("Monthly Special Allowances : "))
 emp_bonus_percentage = float(input("Bonus Percentage : "))
 emp_gross_salary     = emp_monthly_salary + emp_allowance
-emp_annual_salary    = (emp_gross_salary * 12) + (emp_gross_salary * emp_bonus_percentage/100)
-print(f"EMPLOYEE NAME : {emp_name}")
-print(f"EMPLOYEE ID : {emp_id}")
-print(f"EMPLOYEE GROSS MONTHLY SALARY : {emp_gross_salary:0.2f}")
-print(f"EMPLOYEE GROSS ANNUAL SALARY : {emp_annual_salary:0.2f}")
+emp_annual_salary    = (emp_gross_salary * 12) + (emp_gross_salary * 12 * emp_bonus_percentage/100)
+print("-"*50)
+print("EMPLOYEE DETAILS ARE :- \n" + "-"*50)
+print(f"%-35s = {emp_name}"%('EMPLOYEE NAME'))
+print(f"%-35s = {emp_id}"%('EMPLOYEE ID'))
+print(f"%-35s = {emp_gross_salary:0.2f}"%('EMPLOYEE GROSS MONTHLY SALARY'))
+print(f"%-35s = {emp_annual_salary:0.2f}"%( 'EMPLOYEE GROSS ANNUAL SALARY'))
 
 '''QUESTION STATEMENT 
 Tax Calculator Problem
