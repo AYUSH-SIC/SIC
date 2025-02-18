@@ -1,4 +1,5 @@
-def binarySearch(array,search_element):
+def binary_search(array,search_element):
+
     high = len(array) - 1
     low = 0
     while low <= high:
@@ -9,6 +10,7 @@ def binarySearch(array,search_element):
             high = mid - 1
         else:
             low = mid + 1
+    return -1
 
-print(binarySearch([1,2,3,4,5,6,7],4))
-        
+
+
