@@ -10,6 +10,11 @@ for i in range(len(input_list) - 1):
         input_rev[i],input_rev[i+1] = input_rev[i+1],input_rev[i]
         index = i
         break
-index = len(input_list) - 2
+
 input_rev = input_rev[::-1]
+if index < len(input_rev) & index > 0:
+    index = len(input_list) - 2
+    print(''.join(input_rev[0:index] + sorted(input_rev[index:])))
+else :
+    print(''.join(input_rev))
 print(''.join(input_rev[0:index] + sorted(input_rev[index:])))
