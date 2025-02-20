@@ -7,3 +7,6 @@
 
 modern c++ 11/14/19
 DSA - HR/LC/CC
+FUNCTIONAL PROGRAMMING
+cmd input in the programs
+cyclometic complexity -- for number of paths of a logic
