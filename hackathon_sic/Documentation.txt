@@ -1,0 +1,49 @@
+Documentation
+
+C- Section Data Analysis Project 
+
+By:
+Aryan Saini
+Ayush Anand
+Ayush Patel
+Ashutosh Mishra
+Rajput Aditya
+
+This data analysis project was to analyse and determine various factors influencing C-Section deliveries.
+There has been a recent rise in the amount of C-Section deliveries in India due to various scams taking place by hospitals.
+Keeping this in mind we have designed this data analysis project.
+
+Problem Statement:
+
+So what we have tried to resolve are mainly 4 different analysis:
+
+- Which part of the country has more C-section deliveries?
+
+- Which hospitals have more C-Section deliveries?
+		
+-Does C-section deliveries and seasons have any relation?
+
+-What percentage of 2nd child birth has normal delivery when 1st delivery was by C-section?
+
+
+Files:
+
+app.py - This file is the backend program used to generate the various graphs we required to analyse the data obtained from our .csv file. It also has the various routes required to route our frontend to the various functions. 
+
+C-section.py - This program is a dummy program which we used to understand and analyse the graphs, It is also a menu driven program
+
+Index.html and style.css - We also made a hard coded interactive HTML page which has the charts encoded into them.
+
+Inference:
+
+- Which part of the country has more C-section deliveries?
+From the analysis we came to a conclusion that Bihar has the highest C-Section deliveries.
+
+- Which hospitals have more C-Section deliveries?
+From the analysis we came to a conclusion that AIIMS has the highest C-Section deliveries.
+
+-Does C-section deliveries and seasons have any relation?
+From the analysis we noticed that during Monsoon the C-Section deliveries are during an all time high.
+
+-What percentage of 2nd child birth has normal delivery when 1st delivery was by C-section?
+We calculated that about 12.77% of the 2nd deliveries were normal deliveries when the first one was by C-Section.
